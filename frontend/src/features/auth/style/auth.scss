@@ -1,0 +1,120 @@
+main {
+  background-color: #050816;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+
+  .glow {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    filter: blur(120px);
+  }
+
+  .glow1 {
+    background: #7b2ff7;
+    top: -100px;
+    left: -100px;
+  }
+
+  .glow2 {
+    background: #0004ff;
+    bottom: -100px;
+    right: -100px;
+  }
+
+  // .glow3 {
+  //   position: absolute;
+  //   height: 100px;
+  //   width: 100px;
+  //   border-radius: 50%;
+  //   filter: blur(80px);
+
+  //   background: #2bff87af;
+  //   top: 30%;
+  //   left: 60%;
+  //   transform: translate(-50%, -50%);
+  // }
+
+  .page {
+    border: 1px solid white;
+    width: 350px;
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+
+    z-index: 10;
+
+
+    h1 {
+      text-align: center;
+    }
+
+    .form1 {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      lable {
+        color: rgb(238, 238, 238);
+      }
+
+      input {
+        padding: 14px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+
+        input::placeholder {
+          color: #ccc;
+        }
+      }
+
+      input::placeholder {
+        color: #ccc;
+      }
+
+      button {
+        padding: 14px;
+        border: none;
+        border-radius: 10px;
+
+        background: #7b2ff7;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+
+        transition: 0.3s;
+        margin-top: 1.5rem;
+      }
+
+      button:active {
+        background: #9d4edd;
+        transform: scale(0.97);
+      }
+    }
+
+
+  }
+}
